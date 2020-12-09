@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #121212;
+}
+
+nav {
+  text-align: center;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 100;
+}
+
+nav ul {
+  width: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "logo logo projects clients";
+  justify-content: flex-start;
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.text-logo {
+  grid-area: logo;
+  align-self: center;
+  justify-self: left;
+}
+
+.nav-projects {
+  grid-area: projects;
+  place-self: center;
+  visibility: hidden;
+}
+
+.nav-clients {
+  grid-area: clients;
+  place-self: center;
+  visibility: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #F4F4F4;
+}
+
+nav li {
+  float: left;
+}
+
+li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.underline-animation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  transition: width .3s;
+}
+
+.underline-animation:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.banner {
+  position: relative;
+  margin-bottom: 15rem;
+}
+
+.reel {
+  width: 100%;
+  margin-top: -10%;
+  position: relative;
+  z-index: 0;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: -8rem;
+  color: #fff;
+  width: 100%;
+}
+
+.banner-text h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.banner-text h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.btn-small {
+  align-self: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.view-show-reel {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+}
+
+button {
+  padding: .5rem;
+  background-color: #222;
+  border-color: #222;
+}
+
+button a {
+  font-size: 16px;
+}
+
+.dropdown {
+  float: left;
+  grid-area: clients;
+  place-self: center;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #111;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+svg {
+  width: 40px;
+}
+
+.showreel {
+  width: 80%;
+  margin: auto;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 10rem;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.footer-content p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.footer-content {
+  width: 100%;
+  text-align: center;
+}
+
+.logo-icon {
+  width: 25px;
+}
+
+@media only screen and (min-width: 38em) {
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .banner-text {
+    bottom: 15rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+}
