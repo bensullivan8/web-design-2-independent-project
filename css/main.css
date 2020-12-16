@@ -126,10 +126,10 @@ li {
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
+  padding: .2rem .4rem;
 }
 
 button {
-  padding: .5rem;
   background-color: #222;
   border-color: #222;
 }
@@ -191,7 +191,7 @@ svg {
 
 video {
   width: 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -219,12 +219,59 @@ footer {
 
 @media only screen and (min-width: 38em) {
 
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+
+  .view-show-reel {
+    padding: .5rem .8rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
 
   .banner-text {
-    bottom: 15rem;
+    bottom: 5rem;
+    animation: 8s fade-in ease;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    60% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+
+  }
+
+  .dropdown {
+    visibility: hidden;
+  }
+
+  .nav-projects {
+    visibility: visible;
+  }
+
+  .nav-clients {
+    visibility: visible;
+  }
+
+}
+
+  button {
+    background-color: rgba(0, 0, 0, .3);
+    border: none;
+  }
+
+  .banner {
+    margin-bottom: 5rem;
   }
 
 }
