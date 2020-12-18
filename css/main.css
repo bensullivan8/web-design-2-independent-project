@@ -9,6 +9,12 @@ html {
 
 body {
   background-color: #121212;
+  position: relative;
+}
+
+.skip-links {
+  position: absolute;
+  top: 0;
 }
 
 nav {
@@ -180,6 +186,10 @@ li {
   display: block;
 }
 
+.intro {
+  background-color: #000;
+}
+
 svg {
   width: 40px;
 }
@@ -240,8 +250,9 @@ footer {
   width: 100%;
 }
 
-.icon-pad {
-  width: 100px;
+.icon-pad img {
+  width: 50px;
+  height: 50px;
 }
 
 .view-projects {

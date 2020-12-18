@@ -12,8 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
+
+    <ul class="skip-links">
+      <li><a href="#main">Jump to main content</a></li>
+      <li><a href="#nav">Jump to navigation</a></li>
+    </ul>
+
     <header>
-      <nav>
+      <nav role="navigation">
         <ul class="container">
           <li class="text-logo exa">
             <a href="index.html"><strong>EQUALS2</strong></a>
@@ -56,7 +62,7 @@
 
     </header>
 
-    <main>
+    <main role="main">
 
       <div id="client-list" class="clients-content gutter">
 
@@ -72,29 +78,26 @@
       </div>
     </main>
 
-    <div class="footer">
+    <footer role="contentinfo">
+      <div class="footer-content gutter-1-4">
+        <img class="logo-icon" src="images/logo-icon.png" alt="Logo Icon">
+        <p class="kilo">EQUALS2 PRODUCTIONS — TORONTO, ON</p>
 
-      <footer>
-        <div class="footer-content gutter-1-4">
-          <img class="logo-icon" src="images/logo-icon.png" alt="Logo Icon">
-          <p class="kilo">EQUALS2 PRODUCTIONS — TORONTO, ON</p>
-
-          <div class="social-icons">
-            <div class="icon-pad island">
-              <a href="https://vimeo.com/"><img src="images/vimeo.svg" alt="Vimeo"></a>
-            </div>
-            <div class="icon-pad island">
-              <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook"></a>
-            </div>
-            <div class="icon-pad island">
-              <a href="https://www.instagram.com/"><img src="images/insta.svg" alt="Instagram"></a>
-            </div>
+        <div class="social-icons">
+          <div class="icon-pad island">
+            <a href="https://vimeo.com/"><img src="images/vimeo.svg" alt="Vimeo"></a>
           </div>
-
+          <div class="icon-pad island">
+            <a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook"></a>
+          </div>
+          <div class="icon-pad island">
+            <a href="https://www.instagram.com/"><img src="images/insta.svg" alt="Instagram"></a>
+          </div>
         </div>
-      </footer>
 
-    </div>
+      </div>
+    </footer>
+
 
   </body>
 </html>
