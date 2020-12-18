@@ -92,7 +92,7 @@ li {
 
 .reel {
   width: 100%;
-  margin-top: -10%;
+  margin: -10% 0 4rem 0;
   position: relative;
   z-index: 0;
 }
@@ -111,14 +111,13 @@ li {
 
 .banner-text h2 {
   text-align: center;
-  margin: 0;
+  margin: 0 0 3rem 0;
   font-weight: lighter;
 }
 
 .btn-small {
   align-self: center;
   position: relative;
-  margin-top: 20px;
 }
 
 .view-show-reel {
@@ -126,16 +125,17 @@ li {
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
-  padding: .2rem .4rem;
-}
-
-button {
+  padding: .5rem .8rem;
   background-color: #222;
   border-color: #222;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
 }
 
-button a {
-  font-size: 16px;
+.view-show-reel:hover {
+  background-color: #555;
 }
 
 .dropdown {
@@ -184,9 +184,26 @@ svg {
   width: 40px;
 }
 
+p {
+  color: #fff;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #aaa;
+}
+
 .showreel {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  margin-top: 5rem;
+}
+
+.showreel h2 {
+  margin-bottom: .5rem;
 }
 
 video {
@@ -214,7 +231,118 @@ footer {
 }
 
 .logo-icon {
-  width: 25px;
+  width: 20%;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  width: 100%;
+}
+
+.icon-pad {
+  width: 100px;
+}
+
+.view-projects {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2rem 0 0 0;
+  padding: .5rem .8rem;
+  background-color: #222;
+  border-color: #222;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.view-projects:hover {
+  background-color: #555;
+}
+
+.logo-parts {
+  width: 100%;
+  position: relative;
+}
+
+.shutter {
+  width: 100%;
+  animation: 60s spin infinite;
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.equals-2 {
+  width: 100%;
+}
+
+.content img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner-text-projects h1, h2 {
+  color: #fff;
+}
+
+.banner-text-projects h1 {
+  margin: 0 0 .5rem 0;
+}
+
+.banner-text-projects h2 {
+  font-weight: lighter;
+}
+
+.banner-text-projects {
+  width: 100%;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.rise {
+  margin-top: -50%;
+}
+
+.projects-content {
+  text-align: center;
+  width: 100%;
+}
+
+.projects-content img {
+  text-align: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.description {
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+
+.clients-content {
+  text-align: center;
+}
+
+.clients-content img {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+
+.clients-content h2 {
+  margin-bottom: 8rem;
 }
 
 @media only screen and (min-width: 38em) {
@@ -225,6 +353,20 @@ footer {
 
   .view-show-reel {
     padding: .5rem .8rem;
+    width: auto;
+  }
+
+  .view-projects {
+    padding: .5rem .8rem;
+    width: auto;
+  }
+
+  .projects-content img {
+    width: 50%;
+  }
+
+  .clients-content img {
+    width: 33.33%;
   }
 
 }
@@ -232,8 +374,8 @@ footer {
 @media only screen and (min-width: 60em) {
 
   .banner-text {
-    bottom: 5rem;
-    animation: 8s fade-in ease;
+    bottom: 7.5rem;
+    animation: 30s fade-in ease infinite;
   }
 
   @keyframes fade-in {
@@ -241,12 +383,21 @@ footer {
       opacity: 0;
     }
 
-    60% {
+    16% {
       opacity: 0;
     }
 
-    100% {
+    25% {
       opacity: 1;
+    }
+
+    82% {
+      opacity: 1;
+
+    }
+
+    100% {
+      opacity: 0;
     }
 
   }
@@ -263,19 +414,54 @@ footer {
     visibility: visible;
   }
 
-}
+  .banner-text h2 {
+    margin-bottom: 1rem;
+  }
 
-  button {
+  .view-show-reel {
     background-color: rgba(0, 0, 0, .3);
     border: none;
+  }
+
+  .view-show-reel:hover {
+    background-color: rgba(#fff, .3);
   }
 
   .banner {
     margin-bottom: 5rem;
   }
 
+  .logo-icon {
+    width: 75px;
+  }
+
+  .view-projects {
+    background-color: rgba(0, 0, 0, .3);
+    border: none;
+  }
+
+  .view-projects:hover {
+    background-color: rgba(#fff, .3);
+  }
+
+  .projects-content img {
+    width: 50%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
+
+  .banner-text {
+    bottom: 10rem;
+  }
+
+  .view-show-reel {
+    margin-top: 2rem;
+  }
+
+  .clients-content img {
+    width: 25%;
+  }
 
 }
