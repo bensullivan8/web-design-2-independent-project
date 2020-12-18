@@ -159,7 +159,7 @@ li {
   right: 0;
   background-color: #000;
   min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .5);
   z-index: 1;
 }
 
@@ -424,7 +424,7 @@ footer {
   }
 
   .view-show-reel:hover {
-    background-color: rgba(#fff, .3);
+    background-color: rgba(256, 256, 256, .3);
   }
 
   .banner {
@@ -441,7 +441,7 @@ footer {
   }
 
   .view-projects:hover {
-    background-color: rgba(#fff, .3);
+    background-color: rgba(256, 256, 256, .3);
   }
 
   .projects-content img {
